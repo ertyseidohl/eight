@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+
+h1{
+	font-family: "Homemade Apple", Serif;
+	text-align: center;
+	color: red;
+}
+
+h3, p {
+	text-align: center;
+	font-family: "Homemade Apple", Serif;
+	mix-blend-mode: multiply;
+	color: rgba(0, 0, 0, 0.7);
+	line-height: 1;
+}
+
+.paper {
+	background-image: url(paper-lg.png);
+	width: 720px;
+	margin: 0 auto;
+	height: 640px;
+	padding: 40px 0;
+	background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 400px) {
+	.paper-sm {
+		background-image: url(paper-sm.png);
+		height: 360px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.paper {
+		background-image: url(paper-tall.png);
+		width: 290px;
+		height: 720px;
+		padding: 40px;
+		font-size: 0.8em;
+	}
+	.paper-xs {
+		background-image: url(paper-xs.png);
+		height: 290px;
+	}
+}
+
+html, body{ 
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+body {
+	background-color: #111;
+	background-image: url(web-1.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
